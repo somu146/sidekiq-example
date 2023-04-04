@@ -54,6 +54,9 @@ group :development, :test do
 
 end
 
+gem "sidekiq"
+
+
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
@@ -63,7 +66,6 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
-  gem "sidekiq"
   gem "capistrano"
   gem "capistrano-rails", require: false
   gem 'capistrano-puma', require: false
