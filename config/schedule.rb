@@ -21,4 +21,8 @@ every 2.minute do
   rake "myrailsapp:monthly_report"
 end
 
+every 2.minute do
+  rake "Cron:send_cron_mail"
+end
+
 # Learn more: http://github.com/javan/whenever
