@@ -18,11 +18,11 @@
 # end
 
 every 2.minute do
-  rake "myrailsapp:monthly_report", path: '/home/my_apps/current'
+  rake "myrailsapp:monthly_report"
 end
 
 every 2.minute do
-  rake "Cron:send_cron_mail", path: '/home/my_apps/current'
+  rake "Cron:send_cron_mail"
 end
 
 # Learn more: http://github.com/javan/whenever
