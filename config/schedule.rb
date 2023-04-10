@@ -22,7 +22,7 @@ every 2.minute do
 end
 
 every 2.minute do
-  rake "Cron:send_cron_mail"
+  rake "Cron:send_cron_mail", path: '/home/my_apps/current'
 end
 
 # Learn more: http://github.com/javan/whenever
